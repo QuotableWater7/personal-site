@@ -1,7 +1,12 @@
 pipeline {
-  agent {
-    docker {
-      image 'node:10.15.1'
+    agent { docker { image 'node:10.15.1' } }
+    stages {
+        stage('Test') {
+            steps {
+								sh 'npm i'
+                sh 'npm run test'
+            }
+        }
     }
 
   }
