@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest src",
+    "test": "jest src/server",
     "deploy": "./scripts/deploy-docker"
   },
   "keywords": [],
@@ -12,6 +12,6 @@
   "license": "ISC",
   "dependencies": {
     "express": "4.17.1",
-    "jest": "^26.0.1"
+    "jest": "26.0.1"
   }
 }
