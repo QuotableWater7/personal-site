@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest src/server",
-    "deploy": "./scripts/deploy-docker"
+    "deploy": "./scripts/deploy-docker.sh"
   },
   "keywords": [],
   "author": "",
