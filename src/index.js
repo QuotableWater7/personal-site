@@ -6,10 +6,8 @@ const app = express()
 
 const PORT = 8000
 
-app.use('/', (req, res, next) => {
-  res.send(`This is JT Bowler's website!`)
-})
+app.use(express.static('src/static'))
 
 app.listen(PORT, () => {
-  console.log(`Server listening on port PORT...`)
+  console.log(`Server listening on port ${PORT}...`)
 })
